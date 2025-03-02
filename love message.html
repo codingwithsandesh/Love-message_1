@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0e1e6;
+            font-family: 'Arial', sans-serif;
+        }
+        .card {
+            border: 2px solid pink;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #fff;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: pink;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Hey there!</h2>
+        <p>Click the button for a special message:</p>
+        <button onclick="showMessage()">Show Love Message</button>
+        <p id="message" style="margin-top: 10px;"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').innerText = "You make my heart smile! 😊";
+        }
+    </script>
+</body>
+</html>
